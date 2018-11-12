@@ -3,8 +3,7 @@ node_js:
   - 'node'
 cache:
   yarn: true
-
-  before_deploy: yarn global add now
+before_deploy: yarn global add now
 deploy:
   - provider: script
     script: now --token $NOW_TOKEN --public
